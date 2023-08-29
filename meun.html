@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav class="topnav">
+        <ul>
+            <i class="fa fa-phone">011-283-6245</i>
+            <i class="fa fa-envelope">Soutn West@gmail.com</i>
+            <i class="fa fa-map-marker">Soweto</i>
+        </ul>
+
+        <div class="media-icons">
+            <a href="#"><i class="fa fa-whatsapp" style="color: rgb(68, 219, 8);"></i></a>
+            <a href="#"><i class="fa fa-facebook" style="color: blue;"></i></a>
+            <a href="#"><i class="fa fa-twitter" style="color: aqua;"></i></a>
+            <a href="#"><i class="fa fa-instagram" style="color: brown;"></i></a>
+
+        </div>
+    </nav>
+    <nav>
+        <div class="navbar">
+
+            <div class="logo">
+                <a href="#home">Logo</a>
+                <!-- <h2>South West Gate school</h2>  -->
+            </div>
+
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Profile</a></li>
+                    <li><a href="#services">Subject</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Footer">Footer</a></li>
+                </ul>
+               
+        </div>
+
+        
+    </nav>
+    <div class="box">
+        <img src="/images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="#" style="width: 156vh;height: 500px;">
+        <div class="h2">
+            <h2 class="word">Welcome to south </h2>
+            <h2 class="word">west gate school</h2>
+        </div>
+
+        <h3 class="word">Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Perspiciatis commodi, omnis nobis, br rem ullam iusto veritatis corporis beatae vitae dolorem <br> necessitatibus itaque sunt modi natus.</h3>
+        
+    </div>
+    <!-- <button>Contact detills</button> -->
+
+    <script>
+              let words = document.querySelectorAll(".word")
+
+ const animate1 = (word) =>{
+        word.classList.add("animate");
+    }
+
+const animateAll = (animate) =>{
+    setTimeout(()=>{
+        animate1(words[0]);
+        setTimeout(()=>{
+            animate1(words[1])
+        },1100);
+    },1200);
+
+
+}
+animateAll(animate1)
+    </script>
+
+    <section class="aboutus">
+        <h1>About us</h1>
+        <div class="container">
+            <div class="image">
+                <img src="/images/michael-marsh-U0dBV_QeiYk-unsplash.jpg" alt="">
+            </div>
+            
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis, unde dolorem non tenetur eos velit sed ut totam voluptatibus incidunt, odit odio. Quidem placeat, iure libero repellendus dolorem repellat.
+                </p>
+                <button><a href="/pages/about.html">learn more</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>our services</h1>
+        <div class="featureservices">
+            <div class="item">
+                <h1>designing</h1>
+                <img src="/images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro blanditiis est nobis architecto! Necessitatibus.
+                </p>
+                <button><a href="/pages/designing.html">learn more</a></button>
+            </div>
+            <div class="item">
+                <h1>gameing</h1>
+                <img src="/images/img.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti aspernatur facere, assumenda ducimus quam.
+                </p>
+                <button><a href="/pages/gameing.html">learn more</a></button>
+            </div>
+            <div class="item">
+                <h1> move</h1>
+                <img src="/images/michael-marsh-U0dBV_QeiYk-unsplash.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus odio ab eveniet ut ex.
+                </p>
+                <button><a href="/pages/move.html">learn more</a></button>
+
+            </div>
+        </div>
+    </section>
+
+     <section class="contact">
+        <h1>contact us</h1>
+        <div class="content">
+            <div class="form">
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <input type="text" placeholder="enter your Subject">
+                    <textarea type="message" placeholder="enter your message" cols="30" rows="10">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            
+            <div class="image">
+                <img src="/images/michael-marsh-U0dBV_QeiYk-unsplash.jpg" alt="">
+
+            </div>
+        </div>
+     </section>
+</body>
+</html>
